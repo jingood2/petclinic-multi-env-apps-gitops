@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - jingood2/nginx-lesson:v0.3.1
