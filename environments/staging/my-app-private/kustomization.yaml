@@ -1,0 +1,11 @@
+---
+namespace: staging
+replicas:
+  - name: nginx-deployment
+    count: 1
+images:
+  - name: jingood2/nginx-lesson
+    newName: jingood2/nginx-lesson-private
+    newTag: v0.1.0
+resources:
+  - "../../../my-app-base"
