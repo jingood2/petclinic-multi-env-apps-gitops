@@ -9,6 +9,7 @@ images:
     newTag: v0.1.0
 resources:
   - "../../../my-app-base"
+# 처음 Deployment 시 dockerhub private repository에서 pull해야 하니까 imagePullSecrets 등록 
 patches:
   - target:
       kind: Deployment
