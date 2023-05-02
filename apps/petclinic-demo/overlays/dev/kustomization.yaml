@@ -1,12 +1,13 @@
----
 namespace: dev
-replicas:
-  - name: petclinic-demo
-    count: 1
 images:
-  - name: jingood2/nginx-lesson
-    newName: jingood2/petclinic-demo
-    newTag: c8a45d1d030a7982b8116896e6eb80349f12e29d
+- name: MYAPP-IMAGE
+  newName: jingood2/petclinic-demo
+  newTag: 3ff3671c6ee1ef1c3042b2d635a4f8b062ddb56a
+- name: jingood2/nginx-lesson
+  newName: jingood2/petclinic-demo
+  newTag: c8a45d1d030a7982b8116896e6eb80349f12e29d
 resources:
-  - "../../base"
-  - "namespace.yaml"
+- ../../base
+- namespace.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
