@@ -1,0 +1,12 @@
+---
+namespace: dev
+replicas:
+  - name: petclinic-demo
+    count: 1
+images:
+  - name: jingood2/nginx-lesson
+    newName: jingood2/petclinic-demo
+    newTag: c8a45d1d030a7982b8116896e6eb80349f12e29d
+resources:
+  - "../../base"
+  - "namespace.yaml"
