@@ -1,11 +1,8 @@
 namespace: dev
 images:
-- name: MYAPP-IMAGE
-  newName: jingood2/petclinic-demo
-  newTag: 9b17d1f8f3ba8cad06fbf14020c28cb721b05f58
-- name: jingood2/nginx-lesson
-  newName: jingood2/petclinic-demo
-  newTag: c8a45d1d030a7982b8116896e6eb80349f12e29d
+  - name: jingood2/nginx-lesson
+    newName: jingood2/petclinic-demo
+    newTag: c8a45d1d030a7982b8116896e6eb80349f12e29d
 resources:
 - ../../base
 - namespace.yaml
