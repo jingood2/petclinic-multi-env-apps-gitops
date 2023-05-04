@@ -51,14 +51,14 @@ spec:
           successThreshold: 1
           failureThreshold: 3
           periodSeconds: 10
-        env:
-        - name: DB_HOST
-          valueFrom:
-            configMapKeyRef:
-              name: petclinic-demo
-              key: DB_HOST
+        #env:
+        #- name: DB_HOST
+        #  valueFrom:
+        #    configMapKeyRef:
+        #      name: petclinic-demo
+        #      key: DB_HOST
         ports:
-        - containerPort:  80
+        - containerPort:  8080
           name:  petclinic-demo
         volumeMounts:
         - name: localtime
