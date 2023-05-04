@@ -1,4 +1,7 @@
 namespace: dev
+replicas:
+  - name: petclinic-demo
+    count: 2
 images:
 - name: MYAPP-IMAGE
   newName: jingood2/petclinic-demo
