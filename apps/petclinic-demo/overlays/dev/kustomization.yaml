@@ -1,11 +1,8 @@
 namespace: dev
-replicas:
-  - name: petclinic-demo
-    count: 1
 images:
 - name: MYAPP-IMAGE
   newName: jingood2/petclinic-demo
-  newTag: 2d42b5fd9859ffa6299a60a4e747148f4b91efe8
+  newTag: 1ace9db4e396b3a5b70652f5323b3cd806d62274
 resources:
 - ../../base
 - namespace.yaml
