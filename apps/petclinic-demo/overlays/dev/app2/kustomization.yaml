@@ -2,31 +2,31 @@ namespace: dev
 images:
 - name: MYAPP-IMAGE
   newName: jingood2/petclinic-demo
-  newTag: fc887e6d92f1ff2487d4e72ec2a07a7b94a7e3e1
+  newTag: fdda81a8517944376c5c63d7b235116171a9584b
 resources:
 - ../../../base
 - namespace.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 patches:
-- target:
-    kind: Deployment
-    name: .*
-  patch: |-
+- patch: |-
     - op: replace
       path: /metadata/name
       value: petclinic-app2-dev
-- target:
-    kind: Service
+  target:
+    kind: Deployment
     name: .*
-  patch: |-
+- patch: |-
     - op: replace
       path: /metadata/name
       value: petclinic-app2-svc-dev
-- target:
+  target:
     kind: Service
     name: .*
-  patch: |-
+- patch: |-
     - op: replace
       path: /spec/selector/app
       value: petclinic-app2-dev
+  target:
+    kind: Service
+    name: .*
