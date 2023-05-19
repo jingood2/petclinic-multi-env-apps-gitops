@@ -9,4 +9,4 @@ spec:
       - name: petclinic-demo
         resources:
           limits:
-            memory: 512Mi
+            memory: 1024Mi
