@@ -25,7 +25,7 @@ patches:
       value: petclinic-app2-svc-dev
 - target:
     kind: Service
-    app: .*
+    name: .*
   patch: |-
     - op: replace
       path: /spec/selector/app
