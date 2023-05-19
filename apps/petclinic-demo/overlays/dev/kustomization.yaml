@@ -2,7 +2,7 @@ namespace: dev
 images:
 - name: MYAPP-IMAGE
   newName: jingood2/petclinic-demo
-  newTag: 0a23ea72dd1b6c9888be4bae45485626afc0a2bd
+  newTag: fc887e6d92f1ff2487d4e72ec2a07a7b94a7e3e1
 resources:
 - ../../base
 - namespace.yaml
