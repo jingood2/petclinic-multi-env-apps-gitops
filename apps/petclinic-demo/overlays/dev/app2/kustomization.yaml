@@ -5,6 +5,8 @@ images:
   newTag: bfafc6e2bf996649333e43300f403b3a3d808238
 resources:
 - ../../../base
+patchesStrategicMerge:
+- ./patch/increase_replicas.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 patches:
