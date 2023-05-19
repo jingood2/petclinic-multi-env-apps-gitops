@@ -10,7 +10,7 @@ metadata:
 spec:
   project: my-project
   source:
-    repoURL: https://github.com/jingood2/petclinic-demo-gitops.git
+    repoURL: https://github.com/jingood2/petclinic-multi-env-apps-gitops.git
     targetRevision: main
     path: apps/petclinic-demo/overlays/dev/app2
   destination:
