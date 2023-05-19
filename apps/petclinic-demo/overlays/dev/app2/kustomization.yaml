@@ -2,7 +2,7 @@ namespace: dev
 images:
 - name: MYAPP-IMAGE
   newName: jingood2/petclinic-demo
-  newTag: fc887e6d92f1ff2487d4e72ec2a07a7b94a7e3e1
+  newTag: bfafc6e2bf996649333e43300f403b3a3d808238
 resources:
 - ../../../base
 apiVersion: kustomize.config.k8s.io/v1beta1
